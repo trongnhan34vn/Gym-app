@@ -8,7 +8,7 @@ const Exercise = () => {
       <View className="mb-5">
         <Text className="text-[#9FADBC]" >Bạn có thể lưu bất kì luyện tậ nào thành một chương trình để sử dụng trong tương lai</Text>
       </View>
-      <View className="mb-40">
+      <View className="">
         <MuscleGroupItem />
         <MuscleGroupItem />
         <MuscleGroupItem />

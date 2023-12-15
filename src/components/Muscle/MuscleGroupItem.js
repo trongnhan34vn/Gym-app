@@ -2,13 +2,16 @@ import React from 'react'
 import { Image, Text } from 'react-native'
 import { View } from 'react-native'
 import MuscleItem from './MuscleItem'
+import { useRoute } from '@react-navigation/native';
 
 const MuscleGroupItem = () => {
+  const route = useRoute();
+
   return (
     <View className="bg-[#A1BDD914] p-3 rounded-[3px] mb-3">
       <View className="flex flex-row items-center justify-between mb-3">
         <Text className="text-[#fff] font-bold text-[16px]">Ngực - Bắp tay dưới</Text>
-        <Text className="text-[#579DFF]">Bắt đầu</Text>
+        <Text className="text-[#579DFF]">{route.name === 'CustomerExerciseDetail' ? 'Chỉnh sửa' : 'Bắt đầu'}</Text>
       </View>
       <View className="flex flex-row gap-3 mb-5">
         <View>
