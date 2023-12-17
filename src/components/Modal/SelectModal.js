@@ -71,7 +71,8 @@ const SelectModal = ({ type, selectModal, setSelectModal, setSelectType }) => {
       onSwipeComplete={closeModal}
       transparent={true}
       isVisible={selectModal}
-      style={{margin: 0, width: '100%', height: '75%'}}
+      style={{margin: 0}}
+      className="translate-y-12"
     >
       <View className="h-screen bg-[#1D2125] rounded-[8px] w-full translate-y-5 opacity-100 py-4 px-4">
         {element.map((item, index) => {

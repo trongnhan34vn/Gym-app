@@ -4,6 +4,8 @@ import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import CustomerExercise from '../screens/CustomerExerciseScreen';
 import UserInfoScreen from '../screens/UserInfoScreen';
+import TraniningSchedule from '../screens/TraniningSchedule';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -20,6 +22,16 @@ const PTStack = () => {
           headerShown: false,
           tabBarIcon: () => {
             return (<AntDesign name="solution1" size={20} color="#B6C2CF" />);
+          }
+        }}
+      />
+      <Tab.Screen
+        name='Lịch'
+        component={TraniningSchedule}
+        options={{
+          headerShown: false,
+          tabBarIcon: () => {
+            return (<AntDesign name="calendar" size={24} color="#B6C2CF" />);
           }
         }}
       />
